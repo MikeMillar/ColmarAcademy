@@ -1,0 +1,189 @@
+/* Universtal Rulesets */
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
+
+/* Header Ruleset */
+header.container {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  height: 64px;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo .img-container img {
+  height: 32px;
+}
+
+/* Navigation Ruleset */
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding-left: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Page Content Ruleset */
+.content .container:nth-child(2n+1) {
+  background-color: grey;
+}
+
+/* Banner Ruleset */
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.banner .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.banner .img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.headline {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+  width: 30%;
+}
+
+.headline h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.headline h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+
+.headline .button {
+  color: white;
+  text-align: center;
+  padding: 0.5rem 0;
+  background-color: darkgrey;
+}
+
+
+/* Information Section Ruleset */
+.information {
+  display: flex;
+  align-items: center;
+}
+
+.info-main {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin-right: 1.5rem;
+  width: 60%;
+}
+
+.info-main .img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-main .img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.info-main h1 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.info-main p {
+  margin-top: 1.5rem;
+}
+
+.info-main span {
+  margin-left: 1.5rem;
+}
+
+.info-secondary {
+  display: flex;
+  flex-flow: column;
+  width: 40%;
+  margin-right: -1.5rem;
+  border-left: 1px solid lightgrey;
+  margin-top: -3.5rem;
+}
+
+.info:last-child {
+  background-color: grey;
+}
+
+.info {
+  display: flex;
+  padding: 1rem;
+  border-bottom: 1px solid lightgrey;
+}
+
+.info .img-container {
+  width: 35%;
+}
+
+.info .img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.info .data {
+  width: 65%;
+  display: flex;
+  flex-flow: column;
+  margin-left: 1rem;
+}
+
+.info .data h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.info .data h3,
+.info .data p,
+.info .data span {
+  margin: 0.5rem 0;
+}
+
+.data span {
+  color: lightblue;
+}
