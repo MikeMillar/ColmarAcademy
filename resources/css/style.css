@@ -5,6 +5,10 @@ Light Grey: #929292
 Light Blue: #62A1C3
 Dark Blue: #2C6C8F */
 
+/* Media Breakpoints
+max-width: 1024 - tablet size
+max-width: 470 - phone size */
+
 /* Universtal Rulesets */
 html {
   font-size: 18px;
