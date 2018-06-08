@@ -54,6 +54,12 @@ header.container {
   height: 3rem;
 }
 
+@media only screen and (max-width: 470px) {
+  .logo span {
+    display: none;
+  }
+}
+
 /* Navigation Ruleset */
 nav ul {
   display: flex;
@@ -74,6 +80,36 @@ nav ul li a {
 
 .light {
   color: lightgrey;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+  .logo {
+    width: 30%;
+    flex-grow: 0;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  .mobile-nav a {
+
+  }
+
+  .mobile-nav a img {
+    height: 2rem;
+  }
 }
 
 /* Page Content Ruleset */
