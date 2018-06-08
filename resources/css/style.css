@@ -1,8 +1,7 @@
 /* Color Palet:
-Dark Grey: #343536
-Medium Grey: #595959
-Light Grey: #929292
-Light Blue: #62A1C3
+Dark #d3d3d3: #343536
+Light #d3d3d3: #d3d3d3
+Light Blue: #a0c7dc
 Dark Blue: #2C6C8F */
 
 /* Media Breakpoints
@@ -18,14 +17,15 @@ body {
   background-color: whitesmoke;
   font-family: Roboto, sans-serif;
   line-height: 1.4;
+  color: #343536;
 }
 
 .container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
-  border-left: 1px solid lightgrey;
-  border-right: 1px solid lightgrey;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
 }
 
 .title {
@@ -36,7 +36,7 @@ body {
 @media only screen and (max-width: 1024px) {
   .container {
     border: none;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid #d3d3d3;
   }
 }
 
@@ -78,7 +78,12 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #343536;
+  transition-duration: .5s;
+}
+
+nav ul li a:hover {
+  color: #a0c7dc;
 }
 
 .bold {
@@ -86,7 +91,8 @@ nav ul li a {
 }
 
 .light {
-  color: lightgrey;
+  color: #d3d3d3;
+  font-weight: 300;
 }
 
 .mobile-nav {
@@ -122,7 +128,7 @@ nav ul li a {
 
 /* Page Content Ruleset */
 .content .container:nth-child(2n+1) {
-  background-color: lightgrey;
+  background-color: #d3d3d3;
 }
 
 .content .container:last-child {
@@ -135,7 +141,7 @@ nav ul li a {
   }
 
   .content .container:first-child {
-    background-color: lightgrey;
+    background-color: #d3d3d3;
   }
 }
 
@@ -171,12 +177,23 @@ nav ul li a {
   margin: 1.5rem 0;
 }
 
+.banner a {
+  text-decoration: none;
+  color: white;
+}
+
 .headline .button {
   color: white;
   text-align: center;
   padding: 0.5rem 0;
-  background-color: darkgrey;
+  background-color: #343536;
   font-size: 1.5rem;
+  transition-duration: .5s;
+}
+
+.button:hover {
+  background-color: #a0c7dc;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -197,7 +214,7 @@ nav ul li a {
     margin: -8rem 1rem 2rem 1rem;
     padding: 0;
     width: 100%;
-    background-color: lightgrey;
+    background-color: #d3d3d3;
   }
 
   .headline h1 {
@@ -220,7 +237,7 @@ nav ul li a {
   .headline {
     margin: 2rem 1rem;
     width: 100%;
-    background-color: lightgrey;
+    background-color: #d3d3d3;
   }
 
   .headline h2 {
@@ -275,19 +292,24 @@ nav ul li a {
   flex-flow: column;
   width: 40%;
   margin-right: -1.5rem;
-  border-left: 1px solid lightgrey;
+  border-left: 1px solid #d3d3d3;
   margin-left: 1.5rem;
 }
 
 .info:last-child {
-  background-color: grey;
+  background-color: #d3d3d3;
   border-bottom: none;
 }
 
 .info {
   display: flex;
   padding: 1rem;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #d3d3d3;
+  transition-duration: .5s;
+}
+
+.info:hover {
+  background-color: #a0c7dc;
 }
 
 .info .img-container {
@@ -321,7 +343,16 @@ nav ul li a {
 }
 
 .data span {
-  color: lightblue;
+  color: #62a1c3;
+  transition-duration: .5s;
+}
+
+.data span:hover {
+  color: #2C6C8F;
+}
+
+.data a {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -337,7 +368,7 @@ nav ul li a {
   .information .secondary {
     width: 100%;
     border: none;
-    border-top: 1px solid lightgrey;
+    border-top: 1px solid #d3d3d3;
     margin: 0;
     padding-top: 1.5rem;
   }
@@ -381,7 +412,7 @@ nav ul li a {
   .information .secondary .info {
     flex-flow: column;
     padding: .5rem;
-    border-top: 1px solid lightgrey;
+    border-top: 1px solid #d3d3d3;
   }
 
   .information .secondary .info .img-container {
@@ -414,6 +445,11 @@ nav ul li a {
   margin: 2rem auto;
   background-color: whitesmoke;
   padding-bottom: 1.5rem;
+  transition-duration: .5s;
+}
+
+.courseinfo:hover {
+  background-color: #a0c7dc;
 }
 
 .courseinfo .img-container {
@@ -487,7 +523,7 @@ nav ul li a {
     width: 100%;
     padding: 0;
     margin: .5rem 0;
-    background-color: lightgrey;
+    background-color: #d3d3d3;
   }
 
   .courseinfo h3 {
@@ -540,7 +576,7 @@ nav ul li a {
 .vid-container video {
   width: 100%;
   height: auto;
-  background-color: grey;
+  background-color: #d3d3d3;
 }
 
 .thesis .secondary {
@@ -548,8 +584,12 @@ nav ul li a {
   border-left: none;
 }
 
+.thesis .secondary .info:hover {
+  background-color: #a0c7dc;
+}
+
 .thesis .info:first-child {
-  background-color: darkgrey;
+  background-color: #d3d3d3;
 }
 
 .thesis .info:last-child {
@@ -584,7 +624,7 @@ nav ul li a {
 /* Footer Ruleset */
 footer {
   display: flex;
-  border-top: 1px solid grey;
+  border-top: 1px solid #d3d3d3;
   align-items: center;
   font-size: 0.75rem;
 }
