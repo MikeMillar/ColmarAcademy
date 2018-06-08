@@ -5,7 +5,7 @@
     <title>Colmar Academy</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
@@ -13,11 +13,11 @@
   <body>
 
     <!-- Complete Header Unit -->
-    <header class="container"> <!-- Manage Site Width -->
+    <header class="container" role="presentation"> <!-- Manage Site Width -->
 
       <!-- Logo & Left side of Header -->
-      <div class="logo">
-        <div class="img-container">
+      <div class="logo" role="presentation">
+        <div class="img-container" role="presentation">
           <a href="#"><img src="./resources/images/ic-logo.svg" alt="Company Logo"></a>
         </div>
         <span class="bold">COLMAR</span><span class="light">ACADEMY</span>
@@ -25,14 +25,14 @@
 
       <!-- Nav & right side of header -->
       <nav role="navigation">
-        <ul class="nav" role="presentation">
+        <ul class="nav" role="navigation">
           <li><a href="#">On Campus</a></li>
           <li><a href="#">Online</a></li>
           <li><a href="#">For companies</a></li>
           <li><a href="#">Sign In</a></li>
         </ul>
       </nav>
-      <div class="mobile-nav">
+      <div class="mobile-nav" role="navigation">
         <a href="#"><img src="./resources/images/ic-on-campus.svg" alt="On campus icon"></a>
         <a href="#"><img src="./resources/images/ic-online.svg" alt="Online Icon"></a>
         <a href="#"><img src="./resources/images/ic-login.svg" alt="Login icon"></a>
@@ -40,14 +40,14 @@
     </header>
 
     <!-- Main Content -->
-    <div class="content">
+    <div class="content" role="presentation">
 
       <!-- Main Banner -->
-      <div class="banner container">
-        <div class="img-container">
+      <div class="banner container" role="presentation">
+        <div class="img-container" role="presentation">
           <img src="./resources/images/banner.jpg" alt="Reading and Writing at a picnic table">
         </div>
-        <div class="headline">
+        <div class="headline" role="presentation">
           <h1 class="title">Learn Something new everyday</h1>
           <h2 class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
           <a href="#learn"><div class="button">
@@ -57,43 +57,43 @@
       </div>
 
       <!-- Information -->
-      <div class="information container">
+      <div class="information container" role="presentation">
 
         <!-- Information Main -->
-        <div class="info-main">
-          <div class="img-container">
+        <div class="info-main" role="presentation">
+          <div class="img-container" role="presentation">
             <img src="./resources/images/information-main.jpg" alt="Reading outside at a park">
           </div>
-          <h1 class="title">It doesn't hurt to keep practicing</h1>
-          <p class="description">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-          <p class="source">Emanuel, Sr Strategist at Hiring.com</p>
+          <h1 class="title" role="presentation">It doesn't hurt to keep practicing</h1>
+          <p class="description" role="presentation">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+          <p class="source" role="presentation">Emanuel, Sr Strategist at Hiring.com</p>
         </div>
-        <div class="secondary event">
-          <div class="info orientation">
-            <div class="img-container">
+        <div class="secondary event" role="presentation">
+          <div class="info orientation" role="presentation">
+            <div class="img-container" role="presentation">
               <img src="./resources/images/information-orientation.jpg" alt="Overhead view of students walking">
             </div>
-            <div class="data">
-              <h3 class="title2">Orientation date</h3>
+            <div class="data" role="presentation">
+              <h3 class="title2" role="presentation">Orientation date</h3>
               <p class="description">Tue 10/11 & Wed 11/12: 8am-3pm</p>
-              <a href="#"><span class="more">Read more</span></a>
+              <a href="#"><span class="more" role="presentation">Read more</span></a>
             </div>
           </div>
-          <div class="info campus">
-            <div class="img-container">
+          <div class="info campus" role="presentation">
+            <div class="img-container" role="presentation">
               <img src="./resources/images/information-campus.jpg" alt="Classroom with hanging lights, and map of South America">
             </div>
-            <div class="data">
+            <div class="data" role="presentation">
               <h3 class="title2">Our Campus</h3>
               <p class="description">Find which campus is close by you</p>
               <a href="#"><span class="more">Read more</span></a>
             </div>
           </div>
-          <div class="info lecture">
-            <div class="img-container">
+          <div class="info lecture" role="presentation">
+            <div class="img-container" role="presentation">
               <img src="./resources/images/information-guest-lecture.jpg" alt="Picture of Oliver Sack">
             </div>
-            <div class="data">
+            <div class="data" role="presentation">
               <h3 class="title2">Our guest lecture</h3>
               <p class="description">Join a keynote with Oliver Sack about music in medical treatment</p>
               <a href="#"><span class="more">Read more</span></a>
@@ -104,55 +104,55 @@
       </div>
 
       <!-- Course Information -->
-      <div class="course container" id="learn">
+      <div class="course container" role="presentation" id="learn">
         <h1 class="title">Start learning</h1>
 
         <!-- Flexbox that holds all course information -->
-        <div class="courses">
+        <div class="courses" role="presentation">
 
           <!-- 6 Different Course Selections with img and details -->
-          <div class="courseinfo software">
-            <div class="img-container">
+          <div class="courseinfo software" role="presentation">
+            <div class="img-container" role="presentation">
               <img src="./resources/images/course-software.jpg" alt="Software Engineering Image">
             </div>
             <h3>Software engineering</h3>
             <p class="type">COURSES</p>
             <p class="coursedesc">Web Development, Mobile Development, iOT, APIs</p>
           </div>
-          <div class="courseinfo art">
-            <div class="img-container">
+          <div class="courseinfo art" role="presentation">
+            <div class="img-container" role="presentation">
               <img src="./resources/images/course-computer-art.jpg" alt="Computer Art Image">
             </div>
             <h3>Computer Art</h3>
             <p class="type">COURSES</p>
             <p class="coursedesc">Image & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
           </div>
-          <div class="courseinfo design">
-            <div class="img-container">
+          <div class="courseinfo design" role="presentation">
+            <div class="img-container" role="presentation">
               <img src="./resources/images/course-design.jpg" alt="Design Image">
             </div>
             <h3>Desgin</h3>
             <p class="type">COURSES</p>
             <p class="coursedesc">User Experience Design, User Research, Visual Desgin</p>
           </div>
-          <div class="courseinfo data">
-            <div class="img-container">
+          <div class="courseinfo data" role="presentation">
+            <div class="img-container" role="presentation">
               <img src="./resources/images/course-data.jpg" alt="Data Image">
             </div>
             <h3>Data</h3>
             <p class="type">COURSES</p>
             <p class="coursedesc">Data Science, Big Data, SQL, Data Visualization</p>
           </div>
-          <div class="courseinfo business">
-            <div class="img-container">
+          <div class="courseinfo business" role="presentation">
+            <div class="img-container" role="presentation">
               <img src="./resources/images/course-business.jpg" alt="Business Image">
             </div>
             <h3>Business</h3>
             <p class="type">COURSES</p>
             <p class="coursedesc">Product Development, Business Development, Startup</p>
           </div>
-          <div class="courseinfo marketing">
-            <div class="img-container">
+          <div class="courseinfo marketing" role="presentation">
+            <div class="img-container" role="presentation">
               <img src="./resources/images/course-marketing.jpg" alt="Marketing Image">
             </div>
             <h3>Marketing</h3>
@@ -163,33 +163,33 @@
       </div>
 
       <!-- Thesis Exbit -->
-      <div class="thesis container">
+      <div class="thesis container" role="presentation">
         <h1 class="title">Thesis exhibit</h1>
 
         <!-- Main Video & description -->
-        <div class="mainvid">
-          <div class="vid-container">
+        <div class="mainvid" role="presentation">
+          <div class="vid-container" role="presentation">
             <video src="./resources/videos/thesis.mp4" controls poster="posterimage.jpg">
               The video failed to display.</video>
           </div>
           <h2 class="vid-title">Reimagine urban</h2>
           <p class="vid-description">"Curabitur vitae libero in ipsum porttitor consequat. Aliquem et commodo lectus, nec consequat neque. Sed non accumsen urna. Phasellus sed consequat ex. Etiam eget magna laoreet, effictur dolor consequat, tristique ligula."</p>
         </div>
-        <div class="secondary">
-          <div class="info Prisma">
-            <div class="img-container">
+        <div class="secondary" role="presentation">
+          <div class="info Prisma" role="presentation">
+            <div class="img-container" role="presentation">
               <img src="./resources/images/thesis-fisma.jpg" alt="Fisma Thesis Image">
             </div>
-            <div class="data">
+            <div class="data" role="presentation">
               <h3 class="title2">Prisma: Design and Prototype</h3>
               <p class="description">Designer showcase of new prototype product</p>
             </div>
           </div>
-          <div class="info now-and-then">
-            <div class="img-container">
+          <div class="info now-and-then" role="presentation">
+            <div class="img-container" role="presentation">
               <img src="./resources/images/thesis-now-and-then.jpg" alt="Now and then Image">
             </div>
-            <div class="data">
+            <div class="data" role="presentation">
               <h3 class="title2">Now and then</h3>
               <p class="description">Research study about New York</p>
             </div>
@@ -201,7 +201,10 @@
       <footer class="container">
         <span class="copyright">&copy; Colmar Academy. All rights reserved</span>
         <nav>
-          <ul>
+          <ul role="navigation">
+            <li><a href="#"><i class="fa fa-facebook x2"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram x2"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter x2"></i></a></li>
             <li><a href="#">Terms</a></li>
             <li><a href="#">Privacy</a></li>
           </ul>
