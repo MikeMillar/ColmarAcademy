@@ -61,7 +61,7 @@ header.container {
   height: 3rem;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 1024px) {
   .logo span {
     display: none;
   }
@@ -93,10 +93,11 @@ nav ul li a {
   display: none;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 1024px) {
+
   .logo {
     width: 30%;
-    flex-grow: 0;
+    flex-grow: 1;
   }
 
   .nav {
@@ -121,7 +122,7 @@ nav ul li a {
 
 /* Page Content Ruleset */
 .content .container:nth-child(2n+1) {
-  background-color: grey;
+  background-color: lightgrey;
 }
 
 .content .container:last-child {
@@ -178,7 +179,7 @@ nav ul li a {
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 1024px) {
   .banner {
     width: 100%;
     flex-flow: column;
@@ -193,13 +194,36 @@ nav ul li a {
   }
 
   .headline {
-    margin: 2rem 1rem;
+    margin: -8rem 1rem 2rem 1rem;
     padding: 0 1rem;
-    width: 90%;
+    width: 100%;
+    background-color: lightgrey;
+  }
+
+  .headline h1 {
+    margin-left: 2rem;
   }
 
   .headline h2 {
     font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+
+  .button {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .headline {
+    margin: 2rem 1rem;
+    width: 100%;
+    background-color: lightgrey;
+  }
+
+  .headline h2 {
+    margin-left: 1.5rem 0;
   }
 }
 
@@ -299,23 +323,32 @@ nav ul li a {
   color: lightblue;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 1024px) {
+  .information {
+    flex-flow: column;
+  }
+
+  .info-main {
+    width: 100%;
+    padding-bottom: 1.5rem;
+  }
+
   .information .secondary {
     width: 100%;
     border: none;
+    border-top: 1px solid lightgrey;
     margin: 0;
+    padding-top: 1.5rem;
   }
 
   .information .secondary .info {
-    flex-flow: column;
     justify-content: center;
     border: none;
-    padding: 0;
+    padding: 1rem 0 0 0;
   }
 
   .information .secondary .info .img-container {
-    width: 100%;
-    max-height: 10rem;
+    width: 35%;
     overflow: hidden;
   }
 
@@ -331,14 +364,31 @@ nav ul li a {
     background-color: whitesmoke;
   }
 
-  .info-main {
-    display: none;
-  }
-
   .orientation,
   .campus,
   .lecture {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .information .secondary {
+    border: none;
+    padding-top: 0;
+  }
+
+  .information .secondary .info {
+    flex-flow: column;
+    padding: 0;
+  }
+
+  .information .secondary .info .img-container {
+    width: 100%;
+    max-height: 10rem;
+  }
+
+  .info-main {
+    display: none;
   }
 }
 /* Courses Ruleset */
@@ -355,6 +405,7 @@ nav ul li a {
 }
 
 .courseinfo {
+  min-width: 235px;
   width: 30%;
   display: flex;
   flex-flow: column;
@@ -381,6 +432,39 @@ nav ul li a {
 
 .courseinfo p {
   margin: 0.5rem 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .courseinfo {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .course h1 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .courses {
+    flex-flow: column nowrap;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .courseinfo {
+    width: 100%;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: whitesmoke;
+  }
+
+  .courseinfo h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
 }
 
 @media only screen and (max-width: 470px) {
@@ -470,7 +554,7 @@ nav ul li a {
   background-color: whitesmoke;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 1024px) {
   .thesis h2 {
     display: none;
   }
