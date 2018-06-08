@@ -470,6 +470,31 @@ nav ul li a {
   background-color: whitesmoke;
 }
 
+@media only screen and (max-width: 470px) {
+  .thesis h2 {
+    display: none;
+  }
+
+  .thesis p {
+    display: none;
+  }
+
+  .thesis {
+    padding: 0;
+    margin: 0;
+  }
+
+  .mainvid {
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+  }
+
+  .thesis .secondary {
+    display: none;
+  }
+}
+
 /* Footer Ruleset */
 footer {
   display: flex;
