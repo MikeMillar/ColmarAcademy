@@ -33,6 +33,12 @@ body {
   font-weight: 900;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    border: none;
+  }
+}
+
 /* Header Ruleset */
 header.container {
   display: flex;
@@ -161,6 +167,30 @@ nav ul li a {
   font-size: 1.5rem;
 }
 
+@media only screen and (max-width: 470px) {
+  .banner {
+    width: 100%;
+    flex-flow: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner .img-container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .headline {
+    margin: 2rem 1rem;
+    padding: 0 1rem;
+    width: 90%;
+  }
+
+  .headline h2 {
+    font-size: 1.5rem;
+  }
+}
 
 /* Information Section Ruleset */
 .information {
@@ -225,6 +255,9 @@ nav ul li a {
 }
 
 .info .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 35%;
 }
 
@@ -255,6 +288,48 @@ nav ul li a {
   color: lightblue;
 }
 
+@media only screen and (max-width: 470px) {
+  .information .secondary {
+    width: 100%;
+    border: none;
+    margin: 0;
+  }
+
+  .information .secondary .info {
+    flex-flow: column;
+    justify-content: center;
+    border: none;
+    padding: 0;
+  }
+
+  .information .secondary .info .img-container {
+    width: 100%;
+    max-height: 10rem;
+    overflow: hidden;
+  }
+
+  .information .secondary .info .img-container img {
+    height: auto;
+  }
+
+  .information .secondary .info .data {
+    width: 90%;
+  }
+
+  .info:last-child {
+    background-color: whitesmoke;
+  }
+
+  .info-main {
+    display: none;
+  }
+
+  .orientation,
+  .campus,
+  .lecture {
+    width: 100%;
+  }
+}
 /* Courses Ruleset */
 .course h1 {
   margin: 2rem 0;
